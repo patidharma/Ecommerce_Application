@@ -1,0 +1,5 @@
+# Ignore environment and secret files
+Spring_Backend/keys.env
+Spring_Backend/target/
+angular/node_modules/
+.env

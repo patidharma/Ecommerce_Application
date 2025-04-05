@@ -1,0 +1,21 @@
+<nav>
+    <!-- 🔷 Logo -->
+    <a routerLink="/" class="logo">LOGO</a>
+
+    <!-- 🔍 Search Form -->
+    <form (submit)="handleSearchSubmit()">
+        <input type="text" placeholder="Search product ..." name="searchValue" [(ngModel)]="searchValue">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- 🏠 Navigation Links -->
+    <div class="nav-links">
+        <a routerLink="/">Home</a>
+        <a routerLink="/categories">Category</a>
+        <a *ngIf="isAuthenticated" routerLink="/profile">Account</a>
+        <a *ngIf="isAdmin" routerLink="/admin">Admin</a>
+        <a *ngIf="!isAuthenticated" routerLink="/login">Login</a>
+        <a *ngIf="isAuthenticated" (click)="handleLogout()">Logout</a>
+        <a routerLink="/cart" class="cart-link">Cart</a>
+    </div>
+</nav>

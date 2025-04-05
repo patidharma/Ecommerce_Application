@@ -1,0 +1,110 @@
+/* 🌍 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 📜 Body Styling */
+body {
+    background-color: #F1F3F6; /* Flipkart-like light background */
+    color: #333;
+}
+
+/* 🏠 Navbar (Flipkart Theme) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #2874F0, #0D47A1); /* Flipkart Blue */
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 🌐 Navbar Links */
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔍 Search Bar */
+form {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 12px 15px;
+    width: 400px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* 🎯 Buttons */
+button {
+    padding: 12px 18px;
+    border: none;
+    background-color: #FFA41B; /* Flipkart-like Yellow */
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FF9800;
+}
+
+/* 📲 Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    a {
+        margin: 5px 10px;
+    }
+}

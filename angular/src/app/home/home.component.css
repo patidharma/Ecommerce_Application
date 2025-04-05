@@ -1,0 +1,34 @@
+🏠 Home Section
+.home {
+    padding: 20px;
+    margin-top: 9rem;
+    background: linear-gradient(135deg, #2874F0, #0D47A1); /* Flipkart Blue */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Animation */
+}
+
+/* 🔴 Error Message */
+.error {
+    color: #FF3B3B; /* Bright Red */
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* ✨ Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
